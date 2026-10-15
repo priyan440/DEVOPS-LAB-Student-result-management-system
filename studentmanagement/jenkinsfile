@@ -1,0 +1,17 @@
+pipeline {
+    agent any{
+        stages{
+            steps
+            {
+                step("Install dependenices")
+                {
+                    bat 'npm install'
+                }
+                step('build test')
+                {
+                    bat 'npm run build'
+                }
+            }
+        }
+    }
+}

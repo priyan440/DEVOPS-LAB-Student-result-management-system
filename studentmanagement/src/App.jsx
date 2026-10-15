@@ -1,6 +1,6 @@
 import {useState} from 'react';
 function studentsapp(){
-  const[studentid,setstudentid]=useState([]);
+  const[studentid,setstudentid]=useState('');
   const[studentname,setstudentsname]=useState('');
   const[studentmarks,setstudentsmarks]=useState('');
   const[editid,seteditid]=useState(null);
