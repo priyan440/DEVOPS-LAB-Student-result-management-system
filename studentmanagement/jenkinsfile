@@ -3,10 +3,7 @@ pipeline {
         stages{
             steps
             {
-                step('checkout')
-                {
-                    scm 'checkout'
-                }
+              
                 step("Install dependenices")
                 {
                     bat 'npm install'
